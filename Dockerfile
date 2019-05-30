@@ -6,4 +6,4 @@ RUN yum install -y python36*
 
 COPY src/* /nlp/
 
-ENTRYPOINT /bin/bash
+ENTRYPOINT python36 /nlp/test.py >> /nlp/log/log.txt
